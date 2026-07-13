@@ -27,11 +27,11 @@ export const projectsData = [
     category: "vibe-coded",
     link: "https://github.com/singularity29/Project-Control-",
     media: [
-      { id: '3a', type: 'image', dataUrl: '/project-control-1.png' },
-      { id: '3b', type: 'image', dataUrl: '/project-control-2.png' },
-      { id: '3c', type: 'image', dataUrl: '/project-control-3.png' },
-      { id: '3d', type: 'image', dataUrl: '/project-control-4.png' },
-      { id: '3e', type: 'image', dataUrl: '/project-control-5.png' }
+      { id: '3a', type: 'image', dataUrl: '/Proj C 1.png' },
+      { id: '3b', type: 'image', dataUrl: '/Proj C2.png' },
+      { id: '3c', type: 'image', dataUrl: '/Proj C3.png' },
+      { id: '3d', type: 'image', dataUrl: '/Proj C4.png' },
+      { id: '3e', type: 'image', dataUrl: '/Proj C5.png' }
     ]
   }
 ];
