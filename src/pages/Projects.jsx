@@ -23,7 +23,7 @@ const Projects = () => {
             gap: '1rem'
           }}
         >
-          <h1 style={{ fontSize: '3rem', fontWeight: 800 }}>My Work</h1>
+          <h1 className="page-title">Projects</h1>
           
           <div style={{ display: 'flex', gap: '1rem' }}>
             <a href="https://github.com/singularity29/Project-Control-" target="_blank" rel="noreferrer" className="btn btn-primary">
@@ -34,39 +34,18 @@ const Projects = () => {
         </motion.div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
-          {/* Section: My Work */}
-          <section>
-            <h2 style={{ fontSize: '2rem', marginBottom: '2rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>My Work</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-              {projects.filter(p => p.category === 'my-work' || !p.category).length === 0 ? (
-                <div style={{ color: 'var(--text-secondary)' }}>No projects in this section yet.</div>
-              ) : (
-                projects.filter(p => p.category === 'my-work' || !p.category).map(project => (
-                  <ProjectCard 
-                    key={project.id} 
-                    project={project} 
-                  />
-                ))
-              )}
-            </div>
-          </section>
-
-          {/* Section: Vibe Coded */}
-          <section>
-            <h2 style={{ fontSize: '2rem', marginBottom: '2rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>Vibe Coded</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-              {projects.filter(p => p.category === 'vibe-coded').length === 0 ? (
-                <div style={{ color: 'var(--text-secondary)' }}>No projects in this section yet.</div>
-              ) : (
-                projects.filter(p => p.category === 'vibe-coded').map(project => (
-                  <ProjectCard 
-                    key={project.id} 
-                    project={project} 
-                  />
-                ))
-              )}
-            </div>
-          </section>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            {projects.length === 0 ? (
+              <div style={{ color: 'var(--text-secondary)' }}>No projects available yet.</div>
+            ) : (
+              projects.map(project => (
+                <ProjectCard 
+                  key={project.id} 
+                  project={project} 
+                />
+              ))
+            )}
+          </div>
         </div>
       </main>
     </PageTransition>

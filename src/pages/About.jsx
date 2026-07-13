@@ -31,15 +31,7 @@ const About = () => {
         >
           <motion.h1 
             variants={itemVariants}
-            style={{ 
-              fontSize: '4.5rem', 
-              fontWeight: 800, 
-              letterSpacing: '-2px', 
-              marginBottom: '1rem',
-              background: 'linear-gradient(to right, #ffffff, #a3a3a3)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent'
-            }}
+            className="hero-title"
           >
             Hello, I'm Sudip.
           </motion.h1>
@@ -101,6 +93,7 @@ const About = () => {
             {['C', 'Java', 'HTML / CSS / JS'].map((skill, index) => (
               <motion.div
                 key={skill}
+                className="skill-badge"
                 whileHover={{ scale: 1.05, y: -5, borderColor: 'var(--accent)', boxShadow: '0 5px 15px var(--accent-glow)' }}
                 style={{
                   padding: '0.8rem 1.5rem',

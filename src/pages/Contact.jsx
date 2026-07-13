@@ -16,15 +16,9 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="glass-panel"
-          style={{
-            padding: '4rem',
-            textAlign: 'center',
-            maxWidth: '600px',
-            width: '100%'
-          }}
+          className="glass-panel contact-panel"
         >
-          <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1rem' }}>Let's Connect</h1>
+          <h1 className="page-title" style={{ marginBottom: '1rem' }}>Let's Connect</h1>
           <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.1rem' }}>
             Feel free to reach out for opportunities, collaborations, or just to say hi!
           </p>

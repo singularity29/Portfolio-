@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
       className="glass-panel"
       style={{ overflow: 'hidden', marginBottom: '3rem' }}
     >
-      <div style={{ width: '100%', height: '400px', backgroundColor: '#000', position: 'relative' }}>
+      <div className="swiper-container-box">
         <Swiper
           modules={[Pagination, Navigation, Autoplay]}
           pagination={{ clickable: true }}
@@ -48,7 +48,7 @@ const ProjectCard = ({ project }) => {
         </Swiper>
       </div>
       
-      <div style={{ padding: '2rem' }}>
+      <div className="project-text-container">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
           <div>
             <h3 style={{ fontSize: '1.5rem', marginBottom: '0.8rem' }}>{project.title}</h3>

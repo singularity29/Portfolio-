@@ -7,19 +7,10 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '1.5rem 2rem',
-        maxWidth: '1000px',
-        margin: '0 auto',
-        position: 'relative',
-        zIndex: 100
-      }}
+      className="navbar"
     >
       <div style={{ fontWeight: 800, letterSpacing: '2px', fontSize: '1.2rem' }}>SUDIP</div>
-      <div style={{ display: 'flex', gap: '2rem' }}>
+      <div className="nav-links">
         <NavLink 
           to="/" 
           style={({ isActive }) => ({
